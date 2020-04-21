@@ -1,2 +1,2 @@
-# best-repo-ever and today
+# best-repo-ever
 #new commit
