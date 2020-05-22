@@ -49,7 +49,7 @@ export default class IncrementalPercentage extends LightningElement {
     outOfInput(){
         if( this.inputValue != ""){
             if ( this.inputValue < this.minim ){
-                this.showError("The lower limit is " + this.minim + "." , this.minim);
+                this.showError("The lower limit is " + this.minim, this.minim);
             }
             else{
                 if ( this.inputValue > this.maxim ){
