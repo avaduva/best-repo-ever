@@ -1,0 +1,9 @@
+.inline{
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: top;
+}
+
+.slds-button{
+    margin-top: 24px;
+}

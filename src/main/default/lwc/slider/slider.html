@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Slider">
+        <div style="display: flex; align-items: flex-end; margin-left:5px;">
+            <button class="slds-button slds-button_brand inline"  onclick={minus}>-</button>
+            <lightning-slider   label={label} 
+                                size="small"
+                                min={minim} 
+                                max={maxim} 
+                                step = {step} 
+                                value={sliderValue} 
+                                onchange={sliderChange}
+                                class="inline">
+            </lightning-slider>
+            <button class="slds-button slds-button_brand inline" onclick={plus} >+</button>
+        </div>
+    </lightning-card>
+    <p>Value of the slider: {test}</p>
+</template>

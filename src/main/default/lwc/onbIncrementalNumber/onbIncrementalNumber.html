@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Incremental number">
+        <div style="display: flex; align-items: flex-start; margin-left: 5px">
+            <button class="slds-button slds-button_brand inline" onclick={minus} >-</button>
+            <lightning-input  type="number"
+                            label={label}
+                            message-when-step-mismatch="Invalid step"
+                            placeholder="Insert a number" 
+                            value={inputValue}
+                            step={step}
+                            onchange={changeInputValue} 
+                            onfocusout={outOfInput}
+                            class="inline ">
+            </lightning-input>             
+            <button class="slds-button slds-button_brand inline" onclick={plus} >+</button>               
+        </div>
+          <div class={styleErrorClass} style="padding-left: 48px; font-size:0.75rem " >{errorMessage}</div>
+    </lightning-card>
+    <p>Value of the input: {test}</p>
+</template>
