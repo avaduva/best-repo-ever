@@ -23,16 +23,7 @@ export default class IncrementalPercentage extends LightningElement {
         if( this.inputValue === undefined || this.inputValue === ""){
             this.inputValue = this.minim;
         }
-        else{
-            let x = parseFloat((this.inputValue - this.step).toFixed(10));
-            if (x < this.minim){
-                this.showError("The lower limit is " + (this.minim*100) + "%." , this.minim);
-            }
-            else{
-                this.inputValue = x;
-            }     
-            
-        }
+        
     }
 
     plus(){
